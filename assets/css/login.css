@@ -38,6 +38,7 @@ body{
     font-size: 18px;
     position: relative;
     cursor: move;
+    user-select: none;
 }
 
 

@@ -10,8 +10,8 @@ $(function () {
         $(".login").hide();
     })
     $("#title").on("mousedown", function (e) {
-        var x = e.pageX - ($(".login").offset().left + $(".login").width() / 2);
-        var y = e.pageY - ($(".login").offset().top + $(".login").height() / 2);
+        var x = e.pageX - ($(".login")[0].offsetLeft);
+        var y = e.pageY - ($(".login")[0].offsetTop);
         $(document).on('mousemove', move)
 
         function move(e) {
@@ -39,6 +39,7 @@ $(function () {
         $("#password").val("");
         $("#repass").hide();
         $(this).hide();
+        $("#loginBtn").val("登录")
         $(".to_register").show();
     })
 
@@ -86,12 +87,15 @@ $(function () {
                 data: $(this).serialize(),
                 success: function (res) {
                     info($(".login_information span"), res.message)
+
                     if (res.status !== 0) {
                         $("#password").select();
                         return
                     }
-                    localStorage.setItem('token', res.token)
-                    location.href = '/index.html'
+                    setTimeout(function () {
+                        localStorage.setItem('token', res.token)
+                        location.href = '/index.html'
+                    }, 300)
                 }
             })
         }

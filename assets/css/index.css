@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+body{
+    overflow: hidden;
+    font:14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+}
+
+.header{
+    position: relative;
+    background-color: #23262E;
+    height: 60px;
+    z-index: 1000;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    color: #009688;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.right .nav-item{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+}
+
+.right .nav-item a{
+    display: block;
+    padding: 0 20px;
+    color: rgba(255,255,255,.7);
+    font-size:14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.right .nav-item a img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+.right li:hover .nav-more{
+    border-color:transparent   transparent #fff transparent;
+    margin-top: -10px;
+}
+
+.right li:hover .nav-child{
+    display: block;
+}
+.right .nav-item .nav-child{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    min-width: 100%;
+    line-height: 36px;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+    border: 1px solid #d2d2d2;
+    z-index: 100;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+.right .nav-item .nav-child a{
+    color: #23262E;
+    text-align: center;
+}
+
+.main{
+    position: fixed;
+    left: 0;
+    top: 60px;
+    z-index: 999;
+    width: 200px;
+    bottom: 0;
+    background-color: #393D49!important;
+}
+
+.side-scroll{
+    position: relative;
+    width: 220px;
+    height: 100%;
+}
+
+.main .side-scroll ul{
+    position: relative;
+    width: 200px;
+    color: #fff;
+    background-color: #393D49;
+    border-radius:2px;
+    box-sizing: border-box;
+}
+
+.main .side-scroll ul li{
+    display: block;
+    line-height: 45px;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition:all 0.3s;
+}
+
+.main .side-scroll ul li:hover{
+    background-color: #4E5465;
+}
+
+.main .side-scroll ul li:hover::before{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 45px;
+    background-color: green;
+}
+
+.main .side-scroll ul li a{
+    position: relative;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    white-space: nowrap;
+    padding: 0 20px;
+    color: rgba(255,255,255,.7);
+    font-size: 14px ;
+    text-decoration: none;
+}
+
+.nav-more{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid dashed dashed;
+    border-color: #fff transparent transparent;
+    overflow: hidden;
+    cursor: pointer;
+    top: 50%;
+    right: 3px;
+    margin-top: -4px;
+    border-width: 6px;
+    border-top-color:rgba(255,255,255,.7);
+    transition: all 0.5;
+}
+
+
+.main li .nav-more{
+    margin-right: 10px;
+}
+
+.main li:hover a{
+    color: #fff !important;
+}
+
+
+.main .side-scroll .nav-tree .nav-child{
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    line-height: 36px;
+    border-radius:2px;
+    border: none;
+    white-space:nowrap;
+}
+
+.main .side-scroll .nav-tree .nav-child a{
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color:rgba(255,255,255,.7);
+    padding: 0 20px;
+    background-color:#23262E ;
+}
