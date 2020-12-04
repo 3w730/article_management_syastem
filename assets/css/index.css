@@ -28,6 +28,7 @@ body{
     line-height: 60px;
     text-align: center;
     color: #009688;
+    user-select: none;
 }
 
 .right{
@@ -38,6 +39,7 @@ body{
     color: #fff;
     border-radius: 2px;
     box-sizing: border-box;
+    user-select: none;
 }
 
 .right .nav-item{
@@ -58,11 +60,13 @@ body{
     cursor: pointer;
 }
 
-
+.right li{
+    transition: all 0.5;
+}
 
 .right .nav-item a img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     vertical-align: middle;
     margin-right: 10px;
     border-radius: 50%;
@@ -74,9 +78,10 @@ body{
     margin-top: -10px;
 }
 
-.right li:hover .nav-child{
+/* .right li:hover .nav-child{
     display: block;
-}
+} */
+
 .right .nav-item .nav-child{
     display: none;
     position: absolute;
@@ -90,6 +95,7 @@ body{
     z-index: 100;
     border-radius: 2px;
     white-space: nowrap;
+
 }
 
 .right .nav-item .nav-child a{
@@ -132,11 +138,19 @@ body{
     transition:all 0.3s;
 }
 
-.main .side-scroll ul li:hover{
+/* 
+{ */
+.chosen{
     background-color: #4E5465;
+    
 }
 
-.main .side-scroll ul li:hover::before{
+.chosen a{
+    color:#fff !important;
+
+}
+
+.chosen::before{
     display: block;
     position: absolute;
     content: '';
@@ -155,6 +169,7 @@ body{
     color: rgba(255,255,255,.7);
     font-size: 14px ;
     text-decoration: none;
+    user-select: none;
 }
 
 .nav-more{
@@ -204,4 +219,73 @@ body{
     color:rgba(255,255,255,.7);
     padding: 0 20px;
     background-color:#23262E ;
+
+}
+
+
+.main .side-scroll .userinfo img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+.main .side-scroll .userinfo{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    user-select: none;
+    color: #fff;
+    border-bottom: 1px solid #282B33;
+    user-select: none;
+}
+
+.text-avater{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size:20px;
+    color: #fff;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.iconfont {
+    margin-right: 5px;
+}
+
+.main_body{
+    position: fixed;
+    top: 60px;
+    bottom: 0px;
+    left: 200px;
+    right: 0;
+}
+
+.bottom_border{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#welcome{
+    font-size: 13px;
 }

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/fonts/iconfont.css">
 </head>
 
 <body>
@@ -16,49 +17,75 @@
             <ul class="right">
                 <li class="nav-item">
                     <a href="javascript:;">
-                        <img src="http://t.cn/RCzsdCq" alt="" class=" nav-img">
-                        闲心
+                        <img class="pic_img" src="http://t.cn/RCzsdCq" alt="" class=" nav-img">
+                        <span class="text-avater">A</span>
+                        个人中心
                         <span class="nav-more">
                         </span>
+                        <div class="bottom_border"></div>
                     </a>
                     <dl class="nav-child">
                         <dd><a href="">基本资料</a></dd>
                         <dd><a href="">安全设置</a></dd>
                     </dl>
                 </li>
-                <li class="nav-item"><a href="">退了</a></li>
+                <li class="nav-item"><a href="javascript:;" class="offBtn">
+                        <span class="iconfont icon-tuichu"></span>退出
+                        <div class="bottom_border"></div></a></li>
             </ul>
         </div>
         <div class="main">
             <div class="side-scroll">
+                <div class="userinfo">
+                    <img class="pic_img" src="http://t.cn/RCzsdCq" alt="" class=" nav-img">
+                    <span class="text-avater">A</span>
+                    <span id="welcome">欢迎 ***</span>
+                </div>
                 <ul class="nav-tree">
+                    <li class="chosen"><a href="/home/dashboard.html" target="fm">
+                            <span class="iconfont icon-home "></span>
+                            首页
+                        </a>
+                    </li>
                     <li><a href="javascript:;">
-                            所有商品
+                            <span class="iconfont icon-16"></span>
+                            文章管理
                             <span class="nav-more">
                             </span>
                         </a>
+                        <dl class="nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="javascript:;">列表三</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
                     </li>
-                    <dl class="nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="javascript:;">列表三</a></dd>
-                        <dd><a href="">超链接</a></dd>
-                    </dl>
+
                     <li><a href="javascript:;">
-                            所有商品
+                            <span class="iconfont icon-user"></span>
+                            个人中心
                             <span class="nav-more">
                             </span>
-                        </a></li>
-                    <dl class="nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="javascript:;">列表三</a></dd>
-                        <dd><a href="">超链接</a></dd>
-                    </dl>
+                        </a>
+                        <dl class="nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="javascript:;">列表三</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+
                 </ul>
             </div>
         </div>
+
+        <div class="main_body">
+            <iframe src="home/dashboard.html" frameborder="0" name="fm"></iframe>
+        </div>
     </div>
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/js/baseAPI.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
