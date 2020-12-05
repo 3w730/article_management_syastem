@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/user/user_info.css">
+    <link rel="stylesheet" href="../assets/lib/layui/css/layui.css">
+    <script src="../assets/lib/jquery.js"></script>
+</head>
+
+<body>
+    <div class="info_card">
+        <div class="card_header">修改用户信息</div>
+        <div class="info_card_body">
+            <form action="" class="info_card_form">
+                <input type="hidden" class="card_form_id" name="id">
+                <div class="card_form_item">
+                    <label for="">登陆名称</label>
+                    <input type="text" class="username" placeholder="请输入登陆名称" required readonly name="username">
+                </div>
+                <div class="card_form_item">
+                    <label for="">用户昵称</label>
+                    <input type="text" class="nickname" placeholder="请输入用户昵称" name="nickname" autocomplete="off">
+                </div>
+                <div class="card_form_item">
+                    <label for="">用户邮箱</label>
+                    <input type="text" class="email" placeholder="请输入用户邮箱" autocomplete="off" name="email">
+                </div>
+                <div class="card_form_item">
+                    <button class="form_item_btn" type="submit">
+                        提交修改
+                    </button>
+                    <button type="reset" id="btn_reset">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="error_prompt">
+        <i class="layui-icon layui-icon-face-cry"></i>
+        <span class="info_1">输入密码必须为6-12位，且不能为空</span>
+    </div>
+    <div class="login_information">
+        <span>登陆成功</span>
+    </div>
+    <script src="../assets/js/baseAPI.js"></script>
+
+    <script src="../assets/js/user/user_info.js"></script>
+</body>
+
+</html>

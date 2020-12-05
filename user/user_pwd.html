@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/user/user_pwd.css">
+    <link rel="stylesheet" href="../assets/lib/layui/css/layui.css">
+    <script src="../assets/lib/jquery.js"></script>
+</head>
+
+<body>
+    <div class="info_pwd">
+        <div class="pwd_header">修改用户信息</div>
+        <div class="info_pwd_body">
+            <form action="" class="info_pwd_form">
+                <div class="pwd_form_item">
+                    <label for="">旧密码</label>
+                    <input type="password" class="oldpwd" placeholder="请输入旧密码" name="oldpwd">
+                </div>
+                <div class="pwd_form_item">
+                    <label for="">新密码</label>
+                    <input type="password" class="newpwd" placeholder="请输入新密码" name="newpwd" autocomplete="off">
+                </div>
+                <div class="pwd_form_item">
+                    <label for="">确认密码</label>
+                    <input type="password" class="repwd" placeholder="请再次确认密码" autocomplete="off" name="repwd">
+                </div>
+                <div class="pwd_form_item">
+                    <button class="form_item_btn" type="submit">
+                        提交修改
+                    </button>
+                    <button type="reset" id="btn_reset">重置</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="error_prompt">
+        <i class="layui-icon layui-icon-face-cry"></i>
+        <span class="info_1">输入密码必须为6-12位，且不能为空</span>
+    </div>
+    <div class="login_information">
+        <span>登陆成功</span>
+    </div>
+    <script src="../assets/js/baseAPI.js"></script>
+
+    <script src="../assets/js/user/user_pwd.js"></script>
+</body>
+
+</html>

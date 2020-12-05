@@ -289,3 +289,8 @@ iframe{
 #welcome{
     font-size: 13px;
 }
+
+.layui-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}

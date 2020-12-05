@@ -1,0 +1,142 @@
+body{
+    background-color: #f2f3f5;
+    padding: 15px;
+}
+
+.info_card{
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+}
+
+.card_header{
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 15px;
+    border-bottom: 2px solid #f6f6f6;
+    color: #333;
+    border-radius: 2px 2px 0 0;
+    font-size: 14px;
+}
+
+.info_card_body{
+    position: relative;
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.info_card_form{
+    width: 500px;
+    display: block;
+}
+
+.card_form_item{
+    margin-bottom: 15px;
+    clear: both;
+
+}
+
+.card_form_item label{
+    display: block;
+    float: left;
+    padding: 9px 15px;
+    width: 80px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+}
+
+.card_form_item input{
+    width: 368px;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 38px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    border-color: #e6e6e6;
+    border-radius: 2px;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+    outline:none;
+}
+
+.card_form_item .form_item_btn{
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 108px;
+    outline: none;
+
+}
+
+#btn_reset{
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid #c9c9c9;
+    background-color: #fff;
+    padding: 0 25px;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px ;
+}
+
+.error_prompt{
+    display:none;
+    position: absolute;
+    height: 80px;
+    left: 50%;
+    top: 25%;
+    text-align: center;
+    line-height: 80px;
+    padding: 0 20px;
+    background-color: #f2f3f5;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgba(0, 0, 0, .3);
+    z-index: 999;
+}
+
+
+.error_prompt .layui-icon{
+    font-size: 25px;
+    color:  rgb(216, 79, 25);
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.info_1{
+    color:  rgb(216, 79, 25);
+    font-weight: 700;
+    user-select: none;
+    font-size: 14px;
+}
+
+.login_information{
+    display: none;
+    position: absolute;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    padding: 0 20px;
+    background-color: rgb(65, 60, 60);
+    line-height: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    letter-spacing:5px;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    user-select: none;
+}

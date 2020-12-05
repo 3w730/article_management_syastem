@@ -1,7 +1,7 @@
 $(function () {
-    $(".nav-item").on("mouseover", function () {
+    $(".nav-item").on("mouseenter", function () {
         console.log(1);
-        $(this).children("a").children(".bottom_border").stop().fadeToggle();
+        $(this).children("a").children(".bottom_border").stop().toggle();
         $(this).children(".nav-child").stop().toggle();
     })
 
@@ -19,34 +19,11 @@ $(function () {
     $(".offBtn").on("click", function () {
         out();
     })
+
+    $(".nav-child a").on("click", function (e) {
+        e.stopPropagation();
+    })
     getUserInfo();
-    function getUserInfo() {
-        $.ajax({
-            methods: "get",
-            url: '/my/userinfo',
-            success: function (res) {
-                if (res.status !== 0) {
-                    return console.log("获取失败");
-                }
-                console.log(res.data);
-                renderAvater(res.data);
-
-            },
-        })
-    }
-
-    function renderAvater(user) {
-        var name = user.nickname || user.username;
-        $("#welcome").html("欢迎  " + name)
-        if (user.pic != null) {
-            $(".pic_img").attr("src", user.pic).show();
-            $(".text-avater").hide();
-        } else {
-            $(".pic_img").hide();
-            var first = name[0];
-            $(".text-avater").html(first);
-        }
-    }
 
     function out() {
         var message = "确定退出吗？"
@@ -59,5 +36,30 @@ $(function () {
         }
 
     }
-
 })
+function renderAvater(user) {
+    var name = user.nickname || user.username;
+    $("#welcome").html("欢迎  " + name)
+    if (user.pic !== '') {
+        $(".pic_img").prop("src", user.user_pic).show();
+        $(".text-avater").hide();
+    } else {
+        $(".pic_img").hide();
+        var first = name[0];
+        $(".text-avater").html(first);
+    }
+}
+
+function getUserInfo() {
+    $.ajax({
+        methods: "get",
+        url: '/my/userinfo',
+        success: function (res) {
+            if (res.status !== 0) {
+                return console.log("获取失败");
+            }
+            renderAvater(res.data);
+
+        },
+    })
+}

@@ -1,0 +1,146 @@
+body{
+  background-color: #f2f3f5;
+  padding: 15px;
+}
+
+.info_avatar{
+  margin-bottom: 15px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+}
+
+.avatar_header{
+  position: relative;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 15px;
+  border-bottom: 2px solid #f6f6f6;
+  color: #333;
+  border-radius: 2px 2px 0 0;
+  font-size: 14px;
+}
+
+.info_avatar_body{
+  position: relative;
+  padding: 10px 15px;
+  line-height: 24px;
+}
+  
+.row2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+  
+.cropper-box {
+  width: 350px;
+  height: 350px;
+  background-color: cyan;
+  overflow: hidden;
+}
+  
+
+.w100 {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+  
+.w50 {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  margin-top: 50px;
+}
+  
+.size {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
+  
+.row1 {
+  display: flex;
+}
+  
+
+.preview-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin-left: -200px;
+}
+  
+.img-preview {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+.row2{
+  width: 500px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 24px;
+  padding: 10px 16px;
+}
+
+.avatar_btn{
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 18px;
+  background-color: #009688;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 280px;
+  outline: none;   
+}
+
+.avatar_sure{
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 18px;
+  background-color: #FF5722;
+  color: #fff;
+  margin-left: 10px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 50px;
+  outline: none; 
+}
+
+.file{
+  display: none;
+}
+
+.login_information{
+  display: none;
+  position: absolute;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  padding: 0 20px;
+  background-color: rgb(65, 60, 60);
+  line-height: 50px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  letter-spacing:5px;
+  transform: translate(-50%,-50%);
+  z-index: 99;
+  user-select: none;
+}
