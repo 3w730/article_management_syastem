@@ -1,10 +1,13 @@
 $(function () {
     $(".nav-item").on("mouseenter", function () {
-        console.log(1);
-        $(this).children(".bottom_border").stop().fadeToggle();
-        $(this).children(".nav-child").stop().toggle();
+        $(this).contents("a").children(".bottom_border").stop().show();
+        $(this).children(".nav-child").stop().fadeIn();
     })
 
+    $(".nav-item").on("mouseleave", function () {
+        $(this).contents("a").children(".bottom_border").stop().fadeOut();
+        $(this).children(".nav-child").stop().fadeOut();
+    })
     $(".nav-tree li").on("click", function () {
         if ($(this).children("dl").is(':visible')) {
             $(this).children("dl").hide();

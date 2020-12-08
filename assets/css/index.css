@@ -79,9 +79,6 @@ body{
     margin-top: -10px;
 }
 
-/* .right li:hover .nav-child{
-    display: block;
-} */
 
 .right .nav-item .nav-child{
     display: none;
@@ -225,6 +222,10 @@ body{
 
 }
 
+.right .nav-item .nav-child a:hover{
+    background-color: #F2F2F2 !important;
+}
+
 
 .main .side-scroll .userinfo img{
     width: 40px;
@@ -275,8 +276,8 @@ body{
 }
 
 .bottom_border{
-    display: block;
     position: absolute;
+    display: none;
     bottom: 0;
     left: 0;
     width: 100%;
