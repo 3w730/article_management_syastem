@@ -1,7 +1,7 @@
 $(function () {
     $(".nav-item").on("mouseenter", function () {
         console.log(1);
-        $(this).children("a").children(".bottom_border").stop().toggle();
+        $(this).children(".bottom_border").stop().fadeToggle();
         $(this).children(".nav-child").stop().toggle();
     })
 

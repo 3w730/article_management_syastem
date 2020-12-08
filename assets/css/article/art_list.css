@@ -1,0 +1,207 @@
+body{
+    background-color: #f2f3f5;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.article_list{
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+}
+
+.article_list_header{
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 15px;
+    border-bottom: 2px solid #f6f6f6;
+    color: #333;
+    border-radius: 2px 2px 0 0;
+    font-size: 14px;
+}
+
+.article_list_body{
+    position: relative;
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.article_list_table{
+    margin: 5px 0;
+    width: 100%;
+    background-color: #fff;
+    color: #666;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.article_list_table thead{
+    vertical-align: middle;
+
+}
+
+.article_list_table thead tr{
+    background-color: #f2f2f2;
+}
+
+.article_list_table td,.article_list_table th{
+    position: relative;
+    padding: 9px 15px;
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    border: 1px solid #e6e6e6;
+}
+
+.edit_btn{
+    display: inline-block;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    background-color: #009688;
+}
+
+.del_btn{
+    display: inline-block;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    background-color: #ff5722;
+}
+
+.login_information{
+    display: none;
+    position: absolute;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    padding: 0 20px;
+    background-color: rgb(65, 60, 60);
+    line-height: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    letter-spacing:5px;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    user-select: none;
+}
+
+.article_list_table tbody tr:hover{
+    background-color: #f2f2f2;
+}
+
+.article_list_sel{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.article_list_sel input{
+    display: block;
+    height: 38px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 38px;
+    padding-right:30px;
+    border: 1px solid #e6e6e6;
+    padding-left: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.list_sel_edge{
+    position: absolute;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    cursor: pointer;
+    border-style:solid;
+    border-color: transparent;
+    border-width: 6px;
+    border-top-color: #c2c2c2;
+    border-top-style: solid;
+    z-index: 99;
+    transition: all 0.3s;
+    transform-origin: 50% 3px;
+
+
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.article_list_sel dl{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 5px 0;
+    z-index: 899;
+    min-width: 100%;
+    border:1px solid #d2d2d2;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);  
+    box-sizing: border-box;
+}
+
+.article_list_sel dl dd{
+    color: #000;
+    padding: 0 10px;
+    height: 36px;
+    cursor: pointer;
+    line-height: 36px !important;
+    margin-left: 0;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+}
+
+.article_list_sel dl dd:first-child{
+    background-color: #5FB878;
+    color: #fff !important;
+}
+.article_list_sel dl dd:first-child:hover{
+    background-color: #5FB878;
+}
+.btn_screen{
+    display: inline-block;
+    height: 38px;
+    opacity: .8;
+    color: #fff;
+    background-color: #009688;
+    padding: 0 18px;
+    line-height: 38px;
+    margin-left: 4px;
+    outline: none;
+    width: 60px;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.article_list_sel dl dd:hover{
+    background-color: #F2F2F2;
+}

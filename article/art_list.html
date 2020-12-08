@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="../assets/css/article/art_list.css">
+</head>
+
+<body>
+    <div class="article_list">
+        <div class="article_list_header">文章列表
+        </div>
+        <div class="article_list_body">
+            <form action="" class="list_screen">
+                <div class="article_list_sel">
+                    <input type="text" placeholder="所有状态" class="list_sel_ipt" readonly name="cate_id" data-Id=''>
+                    <i class="list_sel_edge"></i>
+                    <dl class="list_sel_dl">
+                    </dl>
+                </div>
+                <div class="article_list_sel">
+                    <input type="text" placeholder="所有状态" class="list_sel_ipt" readonly name="cate_name" data-state="" >
+                    <i class="list_sel_edge"></i>
+                    <dl class="list_sel_dl">
+                        <dd class="list_sel_dd" data-state=''>所有状态</dd>
+                        <dd class="list_sel_dd" data-state="已发布">已发布</dd>
+                        <dd class="list_sel_dd" data-state="草稿">草稿</dd>
+                    </dl>
+                </div>
+                <button class="btn_screen">筛选</button>
+            </form>
+            <table class="article_list_table">
+                <colgroup>
+                    <col>
+                    <col width="150px">
+                    <col width="200px">
+                    <col width="150px">
+                    <col width="150px">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>文章标题</th>
+                        <th>分类</th>
+                        <th>发表时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="pageBox"></div>
+        </div>
+    </div>
+    <div class="login_information">
+        <span>登陆成功</span>
+    </div>
+    <script type="text/html" id="tpl_table">
+        {{each data}}
+        <tr>
+            <td >{{$value.title}}</td>
+            <td id="cate_name">{{$value.cate_name}}</td>
+            <td>{{$value.pub_date |retime}}</td>
+            <td>{{$value.state}}</td>
+            <td><button class="edit_btn" data-id="{{$value.Id}}">编辑</button>
+                <button class="del_btn" data-id="{{$value.Id}}" >删除</button></td>
+        </tr>
+        {{/each}}
+    </script>
+    <script type="text/html" id="list_cate">
+        <dd class="list_sel_dd" data-id=''>所有分类</dd>
+        {{each data}}
+        <dd class="list_sel_dd" data-id="{{$value.Id}}">{{$value.name}}</dd>
+        {{/each}}
+    </script>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="../assets/lib/jquery.js"></script>
+    <script src="../assets/js/baseAPI.js"></script>
+    <script src="../assets/lib/template-web.js"></script>
+    <script src="../assets/js/article/art_list.js"></script>
+</body>
+
+</html>
