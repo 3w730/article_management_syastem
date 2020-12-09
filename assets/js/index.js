@@ -8,12 +8,15 @@ $(function () {
         $(this).contents("a").children(".bottom_border").stop().fadeOut();
         $(this).children(".nav-child").stop().fadeOut();
     })
+
     $(".nav-tree li").on("click", function () {
         if ($(this).children("dl").is(':visible')) {
             $(this).children("dl").hide();
+            $(this).contents("a").children(".nav-more").removeClass("rotate");
 
         } else {
             $(this).children("dl").show();
+            $(this).contents("a").children(".nav-more").addClass("rotate");
             $(this).addClass("chosen");
             $(this).siblings("li").removeClass("chosen")
             $(this).siblings("li").children("dl").hide();

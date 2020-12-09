@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/fonts/iconfont.css">
 </head>
@@ -13,13 +12,15 @@
 <body>
     <div>
         <div class="header">
-            <div class="logo">后台布局</div>
+            <div class="logo">
+                <img src="assets/images/chan.png" alt="">
+            </div>
             <ul class="right">
                 <li class="nav-item">
                     <a href="javascript:;">
                         <img class="pic_img" src="http://t.cn/RCzsdCq" alt="" class=" nav-img">
                         <span class="text-avater">A</span>
-                        个人中心
+                        <span>个人中心</span>
                         <span class="nav-more">
                         </span>
                         <div class="bottom_border"></div>
@@ -31,8 +32,10 @@
                     </dl>
                 </li>
                 <li class="nav-item"><a href="javascript:;" class="offBtn">
-                        <span class="iconfont icon-tuichu"></span>退出
-                        <div class="bottom_border"></div></a></li>
+                        <span class="iconfont icon-back"></span>
+                        <span>退出</span>
+                        <div class="bottom_border"></div>
+                    </a></li>
             </ul>
         </div>
         <div class="main">
@@ -49,35 +52,36 @@
                         </a>
                     </li>
                     <li><a href="javascript:;">
-                            <span class="iconfont icon-16"></span>
+                            <span class="iconfont icon-tushu"></span>
                             文章管理
                             <span class="nav-more">
                             </span>
                         </a>
                         <dl class="nav-child">
-                            <dd><a href="article/art_cate.html" target="fm"><i
-                                        class="layui-icon layui-icon-align-left"></i>文章类别</a></dd>
-                            <dd><a href="/article/art_list.html" target="fm"><i
-                                        class="layui-icon layui-icon-read"></i>文章列表</a></dd>
-                            <dd><a href="/article/art_pub.html" target="fm"><i
-                                        class="layui-icon layui-icon-template-1"></i>发表文章</a></dd>
+                            <dd><a href="article/art_cate.html" target="fm"><span
+                                        class="iconfont icon-chart-bar"></span><span>文章类别</span></a>
+                            </dd>
+                            <dd><a href="/article/art_list.html" target="fm"><span
+                                        class="iconfont  icon-layers"></span><span>文章列表</span></a></dd>
+                            <dd><a href="/article/art_pub.html" target="fm"><span
+                                        class="iconfont icon-write"></span><span>发表文章</span></a></dd>
                         </dl>
                     </li>
 
                     <li><a href="javascript:;">
-                            <span class="iconfont icon-user"></span>
+                            <span class="iconfont icon-geren"></span>
                             个人中心
                             <span class="nav-more">
                             </span>
                         </a>
                         <dl class="nav-child">
-                            <dd><a href="user/user_info.html" target="fm"><i
-                                        class="layui-icon layui-icon-template-1"></i>个人资料</a>
+                            <dd><a href="user/user_info.html" target="fm"><span
+                                        class="iconfont icon-bussiness-man"></span><span>个人资料</span></a>
                             </dd>
-                            <dd><a href="/user/user_avatar.html" target="fm"><i
-                                        class="layui-icon layui-icon-picture-fine"></i>更换头像</a></dd>
-                            <dd><a href="/user/user_pwd.html" target="fm"><i
-                                        class="layui-icon layui-icon-password"></i>重置密码</a>
+                            <dd><a href="/user/user_avatar.html" target="fm"><span
+                                        class="iconfont icon-picture"></span><span>更换头像</span></a></dd>
+                            <dd><a href="/user/user_pwd.html" target="fm"><span
+                                        class="iconfont icon-unlock"></span><span>重置密码</span></a>
                             </dd>
                         </dl>
                     </li>
