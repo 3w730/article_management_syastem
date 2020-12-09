@@ -106,7 +106,7 @@ body{
     display: none;
     position: absolute;
     right:10px;
-    top: 25px;
+    top: 40px;
     padding: 5px 0;
     z-index: 899;
     min-width: 90%;
@@ -154,11 +154,12 @@ body{
 }
 
 
-.error_prompt .layui-icon{
+.error_prompt .iconfont{
     font-size: 25px;
     color:  rgb(216, 79, 25);
     font-weight: 700;
-    margin-right: 15px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .info_1{

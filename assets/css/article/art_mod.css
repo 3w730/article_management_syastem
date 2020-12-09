@@ -154,11 +154,12 @@ body{
 }
 
 
-.error_prompt .layui-icon{
+.error_prompt .iconfont{
     font-size: 25px;
     color:  rgb(216, 79, 25);
     font-weight: 700;
-    margin-right: 15px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .info_1{
