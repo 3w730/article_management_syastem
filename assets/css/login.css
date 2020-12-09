@@ -95,6 +95,7 @@ a {
     line-height: 35px;
     overflow: hidden;
     margin: 0px 0px 20px 0px;
+    outline: none;
 }
 
 .login-input label{
@@ -123,8 +124,10 @@ a {
 
 .login .iconfont{
     font-size: 16px;
+    font-weight: 500;
     position: absolute;
-    left: 108px;
+    left: 110px;
+    vertical-align: middle;
 }
 
 #repass{
@@ -157,9 +160,10 @@ a {
     text-align: center;
     line-height: 80px;
     padding: 0 20px;
-    background-color: rgb(207, 190, 190) ;
+    background-color: rgb(248, 245, 245) ;
     transform: translate(-50%,-50%);
     border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 2px;
     z-index: 999;
 }
 
@@ -168,7 +172,8 @@ a {
     font-size: 25px;
     color:  rgb(216, 79, 25);
     font-weight: 700;
-    margin-right: 8px;
+    margin-right: 15px;
+    vertical-align: middle;
 }
 
 .info_1{
