@@ -57,6 +57,7 @@ body{
     border: #ebebeb 1px solid;
     text-align: center;
     cursor: pointer;
+    outline: none;
 }
 
 .login-bg {
@@ -86,6 +87,7 @@ a {
     width: 350px;
     border: #ebebeb 1px solid;
     text-indent: 5px;
+    outline: none;
 }
 
 .login-input {
@@ -119,9 +121,10 @@ a {
     cursor: pointer;
 }
 
-.login .layui-icon{
+.login .iconfont{
+    font-size: 16px;
     position: absolute;
-    left: 105px;
+    left: 108px;
 }
 
 #repass{
@@ -161,11 +164,11 @@ a {
 }
 
 
-.error_prompt .layui-icon{
+.error_prompt .iconfont{
     font-size: 25px;
     color:  rgb(216, 79, 25);
     font-weight: 700;
-    margin-right: 15px;
+    margin-right: 8px;
 }
 
 .info_1{
