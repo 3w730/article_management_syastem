@@ -46,7 +46,7 @@ $(function () {
 function renderAvater(user) {
     var name = user.nickname || user.username;
     $("#welcome").html("欢迎  " + name)
-    if (user.pic !== '') {
+    if (user.pic) {
         $(".pic_img").prop("src", user.user_pic).show();
         $(".text-avater").hide();
     } else {

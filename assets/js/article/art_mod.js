@@ -9,10 +9,9 @@ $(function () {
 
     var j = {
         id: '',
-        cate_name: ''
+        cate_name: '',
     }
     getData(location.search)
-    console.log(j);
     $image.cropper(options)
     initContent();
     var art_state = '已发布';
@@ -33,7 +32,10 @@ $(function () {
         fd.set("cate_id", j.cate_id);
         fd.append("state", art_state);
         fd.append("Id", j.id)
-        editArticle(fd);
+        fd.forEach(function (i, e) {
+            console.log(e, i);
+        })
+        // editArticle(fd);
     })
 
     $(".article_save_btn").on("click", function (e) {
@@ -89,6 +91,7 @@ $(function () {
             method: 'get',
             url: '/my/article/' + j.id,
             success: function (res) {
+                console.log(res);
                 if (res.status === 0) {
                     $("#title").val(res.data.title);
                     $("#state").val(j.cate_name);
